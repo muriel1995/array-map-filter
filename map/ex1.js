@@ -17,11 +17,16 @@ En sortie: [
   'Bacon contains 5 characters',
   'Tofu contains 4 characters',
   'Mayonnaise contains 10 characters'
-]
+
 
  */
 
 function getStringsLength(strings) {
+  strings = strings.map(function(string){
+    const longueur = string.length 
+    return `${string} contains ${longueur} characters`;
+  });
+  return strings
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
